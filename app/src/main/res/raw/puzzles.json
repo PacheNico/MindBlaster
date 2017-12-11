@@ -1,0 +1,176 @@
+[{
+  "name": "Opening the doors",
+  "question": "You have 100 doors in a row that are all initially closed. you make 100 passes by the doors starting with the first door every time. the first time through you visit every door and toggle the door (if the door is closed, you open it, if its open, you close it). the second time you only visit every 2nd door (door #2, #4, #6). the third time, every 3rd door (door #3, #6, #9), etc, until you only visit the 100th door. How many doors will be open at the end, when you finish?",
+  "image": "doors",
+  "answer": "10",
+  "solution": "All numbers except the squares have even number of factors, so if all those doors which are at position number N, where N is not a square should remain closed at the last pass. So, all those doors which are open are 1,4,9,16,25,36,49,64,81,100. All others remain closed.",
+  "complexity": 5
+}, {
+  "name": "Three pizzas",
+  "question": "The slices of the three pizzas are numbered following certain logic. What number should be in the place of the question mark?",
+  "image": "pizzas",
+  "answer": "12",
+  "solution": "Add together the values in the same segments in pizzas A and C and put the answer in the opposite segment in pizza B.",
+  "complexity": 5
+}, {
+  "name": "A classical match riddle",
+  "question": "What is the maximum number of triangles of equal size can you get arranging six matches, if you are not allowed to break any match?",
+  "image": "default",
+  "answer": "4",
+  "solution": "You can get 4 triangles if you arrange the matches into a tetrahedron (a triangular pyramid)",
+  "complexity": 5
+}, {
+  "name": "Weighing marbles",
+  "question": "You are given 25 marbles - all identical looking. 24 are identical in mass, the 25th is slightly heavier than the rest. You also have an old-fashioned balancing scale (one that only shows which side is heavier). What is the minimal number of times you have to use the balancing scale to find the heavier marble, if you cannot use any weights other than the marbles?",
+  "image": "scales",
+  "answer": "3",
+  "solution": "Divide the marbles into 3 groups: of 9, of 9, and of 7 marbles. First, compare the first two groups – if one of them is heavier than the other one, then divide it into 3 groups of 3 marbles and compare 2 of them. Again, if one of them is heavier than the other, then the heavier marble must be in it, and you can easily find it by comparing two marbles out of that little group. If the first two groups of 9 are equal in weight, then the heavier marble must be in the remaining group of 7. Then you can add 2 random marbles to it (from one of the previous groups), and then determine the heavier marble in 2 extra steps as described above. You need 3 comparisons in total.",
+  "complexity": 5
+}, {
+  "name": "Meeting old friends",
+  "question": "You have invited ten people over for dinner. How many different ways are there to arrange them around a circular table? (arrangements are considered the same if one can be rotated into another)",
+  "image": "table",
+  "answer": "362880",
+  "solution": "The number of possible positions is 9!, since whenever the first person seats, the arrangement will be the same, and then the second person has 9 choices, and third has 8 choices, and so on: 9*8*7*6*5*4*3*2*1 = 362880",
+  "complexity": 4
+}, {
+  "name": "Packaging problem",
+  "question": "A merchant can place 8 large boxes or 10 small boxes into a carton for shipping. In one shipment, he sent a total of 96 boxes. If there are more large boxes than small boxes, how many cartons did he ship?",
+  "image": "default",
+  "answer": "11",
+  "solution": "We should divide 96 into 2 integer parts, the greater of which should be a multiple of 8, and the smaller of which should be a multiple of 10. The only way to do that is to have 56 = 8 * 7 and 40 = 10 * 4",
+  "complexity": 4
+}, {
+  "name": "Complex age",
+  "question": "One man said to another: I am twice as old as you were when i was as old as you are. Sum of their current age is 105. Find their present ages (in years) and enter them in ascending order separated by a comma.",
+  "image": "ages",
+  "answer": "45,60",
+  "solution": "The complicated language of the problem can be rewritten into a system of two simple equations: A = 2(B - (A - B)) and A + B = 105. Solving it, we get the correct answer of 45 and 60 years.",
+  "complexity": 4
+}, {
+  "name": "My descendants",
+  "question": "My grandson is about as many days as my daugher in weeks, and my grandson is as many months as I am in years. My grandson, my daughter and I together are 120 years. Can you tell me my age in years?",
+  "image": "descendants",
+  "answer": "72",
+  "solution": "If my grandson age is x, then my daughter's age is 7x (she is 7 times older than my grandson), and mine is 12x days (I am 12 times older than him). So x + 7x + 12x = 120 years, so x = 6 years, and I am 12*6 = 72 years old",
+  "complexity": 4
+}, {
+  "name": "A tricky sequence",
+  "question": "If 9999 = 4, 8888 = 8, 1816 = 6, 1212 = 0, then 1919 = ?",
+  "image": "default",
+  "answer": "4",
+  "solution": "Look at the numbers with closed areas, e.g the top of 9. The number 9999 has 4 closed areas. 8888 has 8 closed areas, the top and bottom parts of the 8. 1816 has 3 closed areas, (top and bottom of 8 and bottom of 6, and it has 2 other digits. 1212 has no closed areas.",
+  "complexity": 4
+}, {
+  "name": "A tricky bookworm",
+  "question": "Looking onto a shelf you see three books each labeled Volume 1, Volume 2, and Volume 3 respectively. Each book is 2.5 inches thick; that is the pages are 2 inches, and each cover .25 inches. A bookworm begins eating it’s way from the first page of Volume 1, and stops at the last page of Volume 3. How many inches did the bookworm travel? (Note he goes in a straight line and can eat through covers)",
+  "image": "bookworm",
+  "answer": "3",
+  "solution": "The key here is to understand that when a book is on a shelf, the first page is furthest to the right, as the last is to the left. So the worm actually eats through one full book plus two covers, which maket the whole path 2.5 + 0.25 + 0.25 = 3 inches",
+  "complexity": 4
+}, {
+  "name": "A strange birthday",
+  "question": "Today is John's birthday. A year ago on his birthday, he had five candles and he lit all except the last one. Today he is going to light all the candles. How old is he today, assuming that he is, of course, older than 5 years (enter the number of years)?",
+  "image": "cake",
+  "answer": "31",
+  "solution": "He is lighting the candles in binary: 11110 = 30, and 11111 = 31.",
+  "complexity": 4
+}, {
+  "name": "A curious sequence",
+  "question": "What is the next member of the following sequence: 1, 11, 21, 1211, 111221...?",
+  "image": "default",
+  "answer": "312211",
+  "solution": "This sequence is called the look-and-say sequence, and to generate a member of the sequence from the previous member, read off the digits of the previous member, counting the number of digits in groups of the same digit. For example: 1 is read off as one 1 or 11, then 11 is read off as two 1's or 21, and so on.",
+  "complexity": 3
+}, {
+  "name": "Colliding Missiles",
+  "question": "Two missiles speed directly toward each other, one at 9,000 miles per hour and the other a t 21,000 miles per hour. They start 1,317miles apart. Without using pencil and paper, calculate how far apart they are one minute before they collide. (in miles)",
+  "image": "missile",
+  "answer": "500",
+  "solution": "The two missiles approach each other with combined speeds of 30,000 miles per hour, or 500 miles per minute. By running the scene backward in time we see that one minute before the collision the missiles would have to be 500 miles apart.",
+  "complexity": 3
+}, {
+  "name": "Mountain Climbing ",
+  "question": "Weary Willie went up a certain mountain at the rate of one and a half miles per hour and came down at the rate of four and a half miles per hour, so that it took him just six hours to make the double journey. How far was it to the top of the mountain (in miles)?",
+  "image": "mountain",
+  "answer": "6.75",
+  "solution": "It must have been 6.75 miles to the top of the mountain. He would go up in 4.5 hours and descend in 1.5 hours.",
+  "complexity": 3
+}, {
+  "name": "Walking Problem",
+  "question": "A man set out at noon to walk from Appleminster to Boneyham, and a friend of his started at two P.M. on the same day to walk from Boneyham to Appleminster. They met on the road at five minutes past four oclock, and each man reached his destination at exactly the same time. Can you say at what time they both arrived? (enter just the pm time as a number)",
+  "image": "default",
+  "answer": "7",
+  "solution": "It will be found (and it is the key to the solution) that the man from B. can walk 7 miles while the man from A. can walk 5 miles. Say the distance between the towns is 24 miles, then the point of meeting would be 14 miles from A. and the man from A. walked 24/7 miles per hour, while the man from B. walked 24/5 miles per hour. They both arrived at 7 P.M. exactly.",
+  "complexity": 3
+}, {
+  "name": "A high school problem",
+  "question": "16 students take a test and the average score is 77. One more student takes the test and the average is now 78. What is the last student's score?",
+  "image": "exam",
+  "answer": "94",
+  "solution": "If there are 16 students, then the total of all scores has to be 16 x 77 = 1232. If the new average is 78 when one student is added, then: (1232 + x)/17 = 78. Solving for x, we get the answer x = 94",
+  "complexity": 3
+}, {
+  "name": "Counting rectangles",
+  "question": "How many arectages are on the following picture?",
+  "image": "rectangles",
+  "answer": "225",
+  "solution": "A good counting strategy can be counting all the squares first (from bigger to smaller ones), then counting rectangles 4*5 and 3*4, and so on.",
+  "complexity": 3
+}, {
+  "name": "A box problem",
+  "question": "The top side of a rectangular box measures 120 square inches, its front side is 96 square inches, and the other pair of sides are 80 square inches each. What are the dimensions of the box? (enter your answer in inches, from smallest to the largest, separated by commas)",
+  "image": "box",
+  "answer": "8,10,12",
+  "solution": "Denoting the dimensions as a, b, and c, we get ab=120, bc=80, and ac=96. Multiplying them all, we get abc=sqrt(80*120*96)=960, so a=12, b = 10, and c = 8",
+  "complexity": 3
+}, {
+  "name": "Two cyclists",
+  "question": "Two cyclists race on a circular track. Brown can ride once round the track in six minutes, and Robinson in four minutes. In how many minutes will Robinson overtake Brown?",
+  "image": "cyclists",
+  "answer": "12",
+  "solution": "If Brown's speed is v, then Robinson's is 1.5v, and Robinson will overtake Brown in 6*v/(1.5v-v) = 12 minutes",
+  "complexity": 2
+}, {
+  "name": "Ancient Problem",
+  "question": "Here is an example of the sort of Breakfast Problem propounded by Metrodorus in 310 A.D. Demochares has lived one-fourth of his life as a boy, one-fifth as a youth, one-third as a man, and has spent thirteen years in his dotage. How old is the gentleman? (enter the number of years)",
+  "image": "metrodorus",
+  "answer": "60",
+  "solution": "One-fourth plus one-fifth plus one-third equals to 47/60, and if the remainder to the whole is 13 years, Demochares must have lived for 60 years in total.",
+  "complexity": 2
+}, {
+  "name": "Shaking hands",
+  "question": "At a party, everyone shook hands with everybody else. There were 66 handshakes. How many people were at the party?",
+  "image": "handshaking",
+  "answer": "12",
+  "solution": "In general, with n+1 people, the number of handshakes is the sum of the first n consecutive numbers: 1+2+3+ ... + n. Since this sum is n(n+1)/2, we need to solve the equation n(n+1)/2 = 66. This is the quadratic equation n^2+ n -132 = 0. Solving for n, we obtain 11 as the answer and deduce that there were 12 people at the party.",
+  "complexity": 2
+}, {
+  "name": "Seven carpenters",
+  "question": "An experienced carpenter and six carpenters with less experience were doing a job. Each of the six less experienced ones has earned 200 dollars, and the most experienced one got 30 dollars more than average among all seven of them. How many dollars did he earn?",
+  "image": "carpenter",
+  "answer": "235",
+  "solution": "To get the average sum, divide the exceeding 30 dollars among the six and add it to the 200 dollars. So on average each of them earned 205 dollars, and the most experienced one earned 235 dollars.",
+  "complexity": 2
+}, {
+  "name": "Picking socks",
+  "question": "It's dark. You have ten grey socks and ten blue socks you want to put into pairs. All socks are exactly the same except for their colour. How many socks would you need to take with you to ensure you had at least a pair?",
+  "image": "socks",
+  "answer": "3",
+  "solution": "With three socks there is always a matching pair since. Either you will have chosen three of the same colour, or a matching pair and an odd one out",
+  "complexity": 1
+}, {
+  "name": "A first-grade problem",
+  "question": "A book in a cover costs 12 dollars, and the book itself is 10 dollars more expensive than the cover. How many dollars does the book cost by itself?",
+  "image": "book",
+  "answer": "11",
+  "solution": "The answer is obviously not 10.",
+  "complexity": 1
+}, {
+  "name": "Two watermelons",
+  "question": "A small watermelon is 10 inches in diameter, and a big one is 20 inches in diameter. Assuming same density, how many times heavier is the second watermelon?",
+  "image": "watermelons",
+  "answer": "8",
+  "solution": "2 cubed equals to 8",
+  "complexity": 1
+}]

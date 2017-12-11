@@ -1,0 +1,1 @@
+To run the program click play and solve the puzzles by entering the solution into the text field. 
